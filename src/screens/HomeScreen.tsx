@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: Colors.background, paddingTop: 92 },
   profileBtn: { position: 'absolute', top: 72, right: 49, zIndex: 10 },
   profileIconWrap: { width: 36, height: 36, borderRadius: 8, backgroundColor: Colors.surface, alignItems: 'center', justifyContent: 'center' },
-  logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
+  logo: { width: Platform.select({ web: 200, default: 260 }), height: Platform.select({ web: 123, default: 160 }), marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
   grid: { marginHorizontal: 50 },
   row: { flexDirection: 'row', justifyContent: 'space-between' },
