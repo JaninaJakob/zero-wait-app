@@ -1,3 +1,4 @@
+cat > App.tsx << 'EOF'
 import React, { useState, useEffect, useRef } from 'react';
 import { NavigationContainer, NavigationState } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -56,6 +57,12 @@ export default function App() {
   useEffect(() => {
     const init = async () => {
       console.log('=== INIT ===');
+
+      // Auf Web immer ausgeloggt starten (für Showcase/Demo-Zwecke)
+      if (typeof window !== 'undefined') {
+        await supabase.auth.signOut();
+      }
+
       console.log('isAppRunning:', isAppRunning());
       const navState = await AsyncStorage.getItem(NAV_STATE_KEY);
       console.log('NAV_STATE:', navState);
@@ -136,3 +143,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
+EOF
