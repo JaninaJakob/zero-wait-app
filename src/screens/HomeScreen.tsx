@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Image, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -65,12 +65,12 @@ export default function HomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   container: { flex: 1, backgroundColor: Colors.background, paddingTop: 92 },
-  profileBtn: { position: 'absolute', top: Platform.select({ web: 50, default: 72 }), right: Platform.select({ web: 36, default: 49 }), zIndex: 10 },
+  profileBtn: { position: 'absolute', top: 72, right: 49, zIndex: 10 },
   profileIconWrap: { width: 36, height: 36, borderRadius: 8, backgroundColor: Colors.surface, alignItems: 'center', justifyContent: 'center' },
-  logo: { width: Platform.select({ web: 160, default: 260 }), height: Platform.select({ web: 98, default: 160 }), marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
+  logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
   grid: { marginHorizontal: 50 },
-  row: { flexDirection: 'row', justifyContent: 'space-between', gap: 20 },
+  row: { flexDirection: 'row', justifyContent: 'space-between' },
   card: { width: 134, height: 153, backgroundColor: Colors.surface, borderRadius: 16, alignItems: 'center', justifyContent: 'center', gap: 12 },
   cardLabel: { fontFamily: 'Inter-Bold', fontSize: 18, fontWeight: '700', color: Colors.textPrimary },
 });
