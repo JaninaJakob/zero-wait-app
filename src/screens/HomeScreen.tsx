@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   logo: { width: Platform.select({ web: 160, default: 260 }), height: Platform.select({ web: 98, default: 160 }), marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
   grid: { marginHorizontal: 50 },
-  row: { flexDirection: 'row', justifyContent: 'space-between', gap: 20 },
+  row: { flexDirection: 'row', justifyContent: 'space-between', gap: 32 },
   card: { width: 134, height: 153, backgroundColor: Colors.surface, borderRadius: 16, alignItems: 'center', justifyContent: 'center', gap: 12 },
   cardLabel: { fontFamily: 'Inter-Bold', fontSize: 18, fontWeight: '700', color: Colors.textPrimary },
 });
