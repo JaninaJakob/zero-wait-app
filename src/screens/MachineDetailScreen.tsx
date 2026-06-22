@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Modal, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Modal, Alert, Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -201,17 +201,42 @@ export default function MachineDetailScreen({ navigation, route }: Props) {
                   </TouchableOpacity>
                 </View>
 
-                <DateTimePicker
-                  value={selectedTime}
-                  mode="time"
-                  display="spinner"
-                  onChange={(_: any, date?: Date) => {
-                    if (date) setSelectedTime(date);
-                  }}
-                  style={styles.dateTimePicker}
-                  textColor={Colors.textPrimary}
-                  themeVariant="dark"
-                />
+                {Platform.OS === 'web' ? (
+                  // @ts-ignore
+                  <input
+                    type="time"
+                    value={`${selectedTime.getHours().toString().padStart(2, '0')}:${selectedTime.getMinutes().toString().padStart(2, '0')}`}
+                    onChange={(e: any) => {
+                      const [h, m] = e.target.value.split(':').map(Number);
+                      const newDate = new Date(selectedTime);
+                      newDate.setHours(h);
+                      newDate.setMinutes(m);
+                      setSelectedTime(newDate);
+                    }}
+                    style={{
+                      fontSize: 24,
+                      padding: 16,
+                      borderRadius: 12,
+                      border: 'none',
+                      background: Colors.surface,
+                      color: Colors.textPrimary,
+                      width: '100%',
+                      marginBottom: 20,
+                    }}
+                  />
+                ) : (
+                  <DateTimePicker
+                    value={selectedTime}
+                    mode="time"
+                    display="spinner"
+                    onChange={(_: any, date?: Date) => {
+                      if (date) setSelectedTime(date);
+                    }}
+                    style={styles.dateTimePicker}
+                    textColor={Colors.textPrimary}
+                    themeVariant="dark"
+                  />
+                )}
               </View>
             </View>
           </Modal>
