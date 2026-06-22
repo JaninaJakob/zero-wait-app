@@ -1,4 +1,3 @@
-cat > App.tsx << 'EOF'
 import React, { useState, useEffect, useRef } from 'react';
 import { NavigationContainer, NavigationState } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -58,7 +57,6 @@ export default function App() {
     const init = async () => {
       console.log('=== INIT ===');
 
-      // Auf Web immer ausgeloggt starten (für Showcase/Demo-Zwecke)
       if (typeof window !== 'undefined') {
         await supabase.auth.signOut();
       }
@@ -68,7 +66,6 @@ export default function App() {
       console.log('NAV_STATE:', navState);
 
       if (!isAppRunning()) {
-        // Kaltstart (npm run ios) → Nav-State löschen → Login
         await AsyncStorage.removeItem(NAV_STATE_KEY);
         markAppRunning();
       }
@@ -143,4 +140,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-EOF
