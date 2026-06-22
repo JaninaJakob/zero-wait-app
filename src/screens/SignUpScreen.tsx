@@ -57,6 +57,8 @@ export default function SignUpScreen({ navigation }: Props) {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Login')} activeOpacity={0.75}>
           <Text style={styles.switchText}>Already have an account? <Text style={styles.switchLink}>Log In</Text></Text>
+
+        
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -66,7 +68,7 @@ export default function SignUpScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   container: { flex: 1, backgroundColor: Colors.background, paddingTop: 92 },
-  logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
+  logo: { width: 220, height: 120, marginHorizontal: 49, marginBottom: 20, marginTop: 30, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
   formWrapper: { position: 'absolute', top: 340, left: 50, right: 50, gap: 16 },
   title: { fontFamily: 'Inter-Medium', fontSize: 20, color: Colors.textPrimary, marginBottom: 8 },

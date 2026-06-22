@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar, Image, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -70,9 +70,9 @@ export default function AdminHomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   container: { flex: 1, backgroundColor: Colors.background, paddingTop: 92, alignItems: 'center' },
-  profileBtn: { position: 'absolute', top: 72, right: 49, zIndex: 10 },
+  profileBtn: { position: 'absolute', top: Platform.select({ web: 50, default: 72 }), right: Platform.select({ web: 36, default: 49 }), zIndex: 10 },
   profileIconWrap: { width: 36, height: 36, borderRadius: 8, backgroundColor: Colors.surface, alignItems: 'center', justifyContent: 'center' },
-  logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 8, marginTop: -20, alignSelf: 'center' },
+  logo: { width: Platform.select({ web: 200, default: 260 }), height: Platform.select({ web: 123, default: 160 }), marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginBottom: 12, alignSelf: 'center' },
   adminBadge: { backgroundColor: Colors.brand, borderRadius: 20, paddingVertical: 4, paddingHorizontal: 16, marginBottom: 32 },
   adminBadgeText: { fontFamily: 'Inter-Bold', fontSize: 12, color: Colors.textPrimary },
