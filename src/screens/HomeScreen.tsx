@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   profileIconWrap: { width: 36, height: 36, borderRadius: 8, backgroundColor: Colors.surface, alignItems: 'center', justifyContent: 'center' },
   logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 20, marginTop: 20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
-  grid: { marginTop: 60, alignSelf: 'center' },
+  grid: { marginTop: 20, alignSelf: 'center' },
   row: { flexDirection: 'row', justifyContent: 'space-between', gap: 32 },
   card: { width: 134, height: 153, backgroundColor: Colors.surface, borderRadius: 16, alignItems: 'center', justifyContent: 'center', gap: 12 },
   cardLabel: { fontFamily: 'Inter-Bold', fontSize: 18, fontWeight: '700', color: Colors.textPrimary },
