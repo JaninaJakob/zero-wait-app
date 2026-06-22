@@ -64,7 +64,7 @@ export default function LoginScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   container: { flex: 1, backgroundColor: Colors.background, paddingTop: 92 },
-  logo: { width: 260, height: 160, marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
+  logo: { width: 200, height: 100, marginHorizontal: 49, marginBottom: 20, marginTop: -20, alignSelf: 'center' },
   subtitle: { fontFamily: 'Inter-Medium', fontSize: 14, fontWeight: '500', color: Colors.textPrimary, marginHorizontal: 49, marginBottom: 76, alignSelf: 'center' },
   formWrapper: { position: 'absolute', top: 380, left: 50, right: 50, gap: 16 },
   title: { fontFamily: 'Inter-Medium', fontSize: 20, color: Colors.textPrimary, marginBottom: 8 },
