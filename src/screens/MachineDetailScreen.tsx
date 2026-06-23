@@ -306,7 +306,7 @@ const styles = StyleSheet.create({
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4 },
   backButton: { position: 'absolute', left: -22, top: 22, zIndex: 10 },
   logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: -2 },
-  pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 14 },
+  pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 20 },
   content: { paddingHorizontal: 50, paddingTop: 10, paddingBottom: 20 },
   nameRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, paddingTop: 10 },
   exerciseName: { fontFamily: 'Inter-Bold', fontSize: 20, fontWeight: '700', color: Colors.textPrimary, marginBottom: 4 },
