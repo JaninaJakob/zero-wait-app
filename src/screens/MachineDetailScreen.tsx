@@ -302,7 +302,7 @@ export default function MachineDetailScreen({ navigation, route }: Props) {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
-  header: { backgroundColor: Colors.surface, height: 95, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 4 },
+  header: { backgroundColor: Colors.surface, height: 110, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 4 },
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4 },
   backButton: { position: 'absolute', left: -22, top: 7, zIndex: 10 },
   logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 7 },
