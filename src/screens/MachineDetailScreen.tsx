@@ -302,10 +302,10 @@ export default function MachineDetailScreen({ navigation, route }: Props) {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
-  header: { backgroundColor: Colors.surface, height: 131, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 0 },
+  header: { backgroundColor: Colors.surface, height: 150, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 60 },
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4 },
-  backButton: { position: 'absolute', left: -22, top: 3, zIndex: 10 },
-  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 3 },
+  backButton: { position: 'absolute', left: -22, top: 63, zIndex: 10 },
+  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 63 },
   pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 20 },
   content: { paddingHorizontal: 50, paddingTop: 10, paddingBottom: 20 },
   nameRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, paddingTop: 10 },
