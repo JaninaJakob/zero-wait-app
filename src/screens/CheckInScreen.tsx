@@ -318,7 +318,7 @@ const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   header: { backgroundColor: Colors.surface, height: 131, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 0 },
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4, marginTop: 50 },
-  logoSmall: { width: 60, height: 40, marginRight: -45, marginTop: -35 },
+  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: -30 },
   pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 20 },
   scannerContainer: { flex: 1, backgroundColor: Colors.background, alignItems: 'center', justifyContent: 'center' },
   scanText: { position: 'absolute', top: 100, color: Colors.textPrimary, fontFamily: 'Inter-Medium', fontSize: 16 },
