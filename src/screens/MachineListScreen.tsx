@@ -221,9 +221,9 @@ export default function MachineListScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
   scroll: { flex: 1 },
-  header: { backgroundColor: Colors.surface, height: 131, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 0 },
+  header: { backgroundColor: Colors.surface, height: 131, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 15 },
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4 },
-  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: -30 },
+  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 0 },
   pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 20 },
   filterSection: { backgroundColor: Colors.background, paddingHorizontal: 50, paddingTop: 25, paddingBottom: 15 },
   sectionLabel: { fontFamily: 'Inter-Bold', fontSize: 20, fontWeight: '700', color: Colors.textPrimary, marginBottom: 9 },
