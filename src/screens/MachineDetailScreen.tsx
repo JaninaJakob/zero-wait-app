@@ -302,11 +302,11 @@ export default function MachineDetailScreen({ navigation, route }: Props) {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: Colors.background },
-  header: { backgroundColor: Colors.surface, height: 125, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 19 },
+  header: { backgroundColor: Colors.surface, height: 132, paddingHorizontal: 50, justifyContent: 'flex-start', paddingTop: 19 },
   headerTop: { flexDirection: 'row', alignItems: 'center', marginBottom: 4 },
   backButton: { position: 'absolute', left: -22, top: 22, zIndex: 10 },
-  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 22 },
-  pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 6 },
+  logoSmall: { width: 60, height: 40, marginRight: -30, marginTop: 16 },
+  pageTitle: { fontFamily: 'BabasNeue-Regular', fontSize: 36, color: Colors.textPrimary, marginTop: 2 },
   content: { paddingHorizontal: 50, paddingTop: 10, paddingBottom: 20 },
   nameRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, paddingTop: 10 },
   exerciseName: { fontFamily: 'Inter-Bold', fontSize: 20, fontWeight: '700', color: Colors.textPrimary, marginBottom: 4 },
